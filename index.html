@@ -12,10 +12,12 @@
       type="image/x-icon"
     />
 
-   
     <link rel="stylesheet" href="./css/style.css" />
 
     <script defer src="./JS/main.js"></script>
+    <script defer src="./JS/chaneColor.js"></script>
+    <script defer src="./JS/autowriting.js"></script>
+    <script defer src="./JS/randomVideos&Quates.js"></script>
   </head>
 
   <body id="body">
@@ -31,17 +33,15 @@
           </li>
           <li><a href=""> About Us </a></li>
           <li id="dark" class="mode">change mode</li>
-          <li id="changecolor" style="position: relative;">
+          <li id="changecolor" style="position: relative">
             Change Color
-          
-          <ul id="hiddenul" style="display: none;">
-            <li id="headerbg">Header BG</li>
-            <li id="titlebg">Title BG</li>
-            <li id="titlecolor">Title Color</li>
-            <li id="sectionbg">Section BG</li>
-          </ul>
-          
-          
+
+            <ul id="hiddenul" style="display: none">
+              <li id="headerbg">Header BG</li>
+              <li id="titlebg">Title BG</li>
+              <li id="titlecolor">Title Color</li>
+              <li id="sectionbg">Section BG</li>
+            </ul>
           </li>
         </ul>
       </nav>
@@ -49,16 +49,16 @@
 
     <main id="mymain">
       <section id="sec">
-        <h1>أنا مين ؟</h1>
+        <h1 id="me">أنا مين ؟</h1>
 
         <div class="flex">
-          <article class="left-section m-inline"  >
-            <h3>هدفى</h3>
+          <article class="left-section m-inline">
+            <h5 class="my-goal">هدفى</h5>
 
             <p>
-              هو إِثراء المُحتوى العربى بمحتوى تعليمى مُتميز عن طريق
+              ان اكون مهندس برمجيات قوي
               <br />
-              التعليم القائم على المشاريع
+              واقدر افيد واساعد غيري
             </p>
 
             <a
@@ -76,15 +76,53 @@
 
             <h5>Mohammed Abd El-Aleem</h5>
 
-            <p class="para">انا الي ضاع من عُمري سنين</p>
+            <p class="para">
+              طالب في كليه الحاسبات جامعة الزقازيق
+              <br />
+              عندي شغف بمجموعة مجالات لكن حاليا بذاكر مجال الويب + الذكاء
+              الاصطناعي
+            </p>
           </article>
         </div>
       </section>
 
       <section>
-        <h1 dir="rtl">الذى يُميز Courses4Arab 😍</h1>
+        <h1>😍 Get Random Video</h1>
+
+        <div id="parentIframe">
+          <div id="containerIframe">
+            <iframe
+              id="myframe"
+              src="https://www.youtube.com/embed/Cbk980jV7Ao?si=DaDB5yx2YV1Gbvxt"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <button id="randomVideo" class="myButton">Random Video</button>
+        </div>
       </section>
-      
+
+      <section>
+        <h1>😍 Random Motivational Quate</h1>
+
+        <div>
+          <div lang="ar" dir="rtl" id="parentQuate">
+            <blockquote class="sidekick">
+              احم أحلامك ولا تدع أحداً على الإطلاق يحبطك، أو يقلل معنوياتك
+              بإخبارك بأنه لا يمكنك فعل شيء ما، على العكس؛ إذا أردت شيئاً فانهض
+              واحصل عليه.
+              <br />
+              <cite> ابوعبدالعليم</cite>
+            </blockquote>
+          </div>
+
+          <button id="randomQuate" class="myButton">Random Quate</button>
+        </div>
+      </section>
     </main>
 
     <footer id="footer">
@@ -94,7 +132,7 @@
         <a href=""> الفيسبوك </a>
       </p>
 
-      <p class="design">Designed and developed by Ali Hassan © 2020</p>
+      <p class="design">Designed and developed by Mohammed Abdelaleem © 2020</p>
     </footer>
   </body>
 </html>

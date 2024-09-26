@@ -74,8 +74,9 @@ header {
   margin-inline: auto;
 }
 
-header h1 {
+header h1.main-title {
   margin-bottom: 23px;
+  height: 73px;
 }
 
 .parent {
@@ -216,6 +217,7 @@ article h5 {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  align-items: center;
 }
 
 footer {
@@ -392,7 +394,6 @@ dialog.msg::backdrop {
 }
 
 /*change colors */
-
 ul#hiddenul {
   display: block;
   border: 2px solid rgb(255, 255, 255);
@@ -414,4 +415,92 @@ ul#hiddenul li:hover {
   font-weight: 500;
   border-bottom: 2px solid red;
 }
+
+/* Videos  -  iframe - animation */
+#myframe {
+display: block;
+width: 500px;
+height: 450px;
+margin-block: 70px;
+margin-inline: auto;
+border-radius: .5rem;
+box-shadow: 0 5px 25px 0 rgb(0 0 0 / 60%);
+
+}
+
+#myframe, 
+.sidekick {
+animation: moveXAni 0.8s 1;
+}
+
+@keyframes moveXAni {
+  0%{
+  transform: translateX(100vw);
+  }
+
+  100%{
+    transform: translateX(0);
+
+  }
+}
+
+.myButton {
+	box-shadow: 0px 5px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:6px;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:15px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+  display: block;
+  margin-inline: auto;
+}
+
+.myButton:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.myButton:active {
+	position:relative;
+	top:2px;
+}
+
+/* Quate */
+
+.sidekick {
+  position: relative;
+  padding-left: 1em;
+  border-left: 0.2em solid #039be5;
+  font-family: sans-serif;
+  font-size: 2.4em;
+  line-height: 1.5em;
+  font-weight: 350;
+}
+.sidekick:before, .sidekick:after {
+  font-family: Calibri;
+    color: #039be5;
+    font-size: 34px;
+}
+.sidekick:before {content: '\201e'}
+.sidekick:after {content: '\201c';}
+.sidekick cite {font-size: 50%; text-align:center; top:50%}
+.sidekick cite:before {content: ' \2015 '}
+
+
+#parentQuate {
+text-align: center;
+width: 80%;
+margin: 50px auto 60px;
+
+}
+
+
+
+
+
 
