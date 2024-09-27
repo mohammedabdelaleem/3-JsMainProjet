@@ -1,4 +1,4 @@
-/* 4-javascript Congratulations Animation*/
+// /* 4-javascript Congratulations Animation*/
 
 // different heart colors code
 const arrHearts = [
@@ -34,7 +34,7 @@ const   createRandomHearts
 
   setTimeout(() => {
     clearInterval(createRndomHearts);
-  }, 2000);
+  }, 2500);
 
   setTimeout(() => {
     clearHeartsAfterAnimation(containerHearts);

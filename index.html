@@ -12,14 +12,27 @@
       type="image/x-icon"
     />
 
-    <link rel="stylesheet" href="./css/style.css" />
-
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./icons/style.css" />
     <script defer src="./JS/main.js"></script>
     <script defer src="./JS/1-chaneColor.js"></script>
     <script defer src="./JS/2-autowriting.js"></script>
     <script defer src="./JS/3-randomVideos&Quates.js"></script>
     <script defer src="./JS/4-random-hearts.js"></script>
+    <script defer src="./JS/4-random-hearts.js"></script>
+    <script defer src="./JS/5-accordion.js"></script>
+    <script defer src="./JS/6-digital-clock.js"></script>
 
+    <!-- <script>
+      const onConfirmRefresh = function (event) {
+        event.preventDefault();
+        return (event.returnValue = "Are you sure you want to leave the page?");
+      };
+
+      window.addEventListener("beforeunload", onConfirmRefresh, {
+        capture: true,
+      });
+    </script> -->
   </head>
 
   <body id="body">
@@ -126,20 +139,95 @@
         </div>
       </section>
 
-
       <section>
         <h1>javascript Congratulations Animation</h1>
 
-          <div id="containerHearts">
-<!-- inner hearts -->
+        <div id="containerHearts"></div>
 
+        <button id="randomHeart" class="myButton">Random Heart</button>
+      </section>
+
+      <section>
+        <h1>javascript Accordion</h1>
+
+        <div class="questions-container">
+          <div class="question">
+            <div class="q-top">
+              <h2>what is Your Favorite Action Movie ?</h2>
+              <i class="icon-plus"></i>
+            </div>
+
+            <p class="answer">1-Lorem ipsum, dolor sit amet consectetur</p>
           </div>
 
-          <button id="randomHeart" class="myButton">Random Heart</button>
+          <div class="question">
+            <div class="q-top">
+              <h2>what is Your Favorite Action Movie ?</h2>
+              <i class="icon-plus"></i>
+            </div>
 
-        </section>
+            <p class="answer">
+              1-Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Commodi ut tempore, minima possimus molestias vero totam nihil
+              dolore, exercitationem illum alias corrupti labore nam delectus
+              facere! Eaque quis eius at?
+            </p>
+          </div>
 
+          <div class="question">
+            <div class="q-top">
+              <h2>what is Your Favorite Action Movie ?</h2>
+              <i class="icon-plus"></i>
+            </div>
 
+            <p class="answer">
+              1-Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Commodi ut tempore, minima possimus molestias vero totam nihil
+              dolore, exercitationem illum alias corrupti labore nam delectus
+              facere! Eaque quis eius at?Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Commodi ut tempore, minima possimus molestias
+              vero totam nihil dolore, exercitationem illum alias corrupti
+              labore nam delectus facere! Eaque quis eius at?Lorem ipsum, dolor
+              sit amet consectetur adipisicing elit. Commodi ut tempore, minima
+              possimus molestias vero totam nihil dolore, exercitationem illum
+              alias corrupti labore nam delectus facere! Eaque quis eius
+              at?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Commodi ut tempore, minima possimus molestias vero totam nihil
+              dolore, exercitationem illum alias corrupti labore nam delectus
+              facere! Eaque quis eius at?Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Commodi ut tempore, minima possimus molestias
+              vero totam nihil dolore, exercitationem illum alias corrupti
+              labore nam delectus facere! Eaque quis eius at?Lorem ipsum, dolor
+              sit amet consectetur adipisicing elit. Commodi ut tempore, minima
+              possimus molestias vero totam nihil dolore, exercitationem illum
+              alias corrupti labore nam delectus facere! Eaque quis eius
+              at?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Commodi ut tempore, minima possimus molestias vero totam nihil
+              dolore, exercitationem illum alias corrupti labore nam delectus
+              facere! Eaque quis eius at?Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Commodi ut tempore, minima possimus molestias
+              vero totam nihil dolore, exercitationem illum alias corrupti
+              labore nam delectus facere! Eaque quis eius at?Lorem ipsum, dolor
+              sit amet consectetur adipisicing elit. Commodi ut tempore, minima
+              possimus molestias vero totam nihil dolore, exercitationem illum
+              alias corrupti labore nam delectus facere! Eaque quis eius at?
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h1>Digital Clock</h1>
+
+        <div class="clock-container">
+          <div id="simple"></div>
+
+          <div class="today">
+            <h2>Today's Project</h2>
+            <div id="todayTime"></div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer id="footer">
