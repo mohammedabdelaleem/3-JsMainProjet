@@ -500,7 +500,39 @@ margin: 50px auto 60px;
 }
 
 
+/*Random Heart / Congratuation Animation*/
+#containerHearts {
+  display: flex;
+  justify-content: space-between;
+}
 
+#randomHeart {
+  margin-top: 80px;
+}
+
+.heart {
+  font-size: 36px;
+
+  position: fixed;
+  top: 0;
+
+animation-name:fall;
+/* animation-duration:1s; */
+animation-iteration-count:1;
+animation-timing-function:linear;
+animation-fill-mode:forwards;
+}
+
+@keyframes fall {
+  0%{
+      transform: translateY(-5vh);
+  }
+
+  100%{
+      transform: translateY(120vh);
+    opacity: 0.8;
+  }
+}
 
 
 

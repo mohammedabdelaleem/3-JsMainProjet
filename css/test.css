@@ -1,0 +1,22 @@
+.hearts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heart {
+    font-size: 40px;
+    /* animation: fall 10s 1 linear forwards; */
+    opacity: 0.5;
+}
+
+@keyframes fall {
+    0%{
+        transform: translateY(-100px);
+    }
+
+    100%{
+        transform: translateY(100vh);
+    opacity: 1;
+
+    }
+}
