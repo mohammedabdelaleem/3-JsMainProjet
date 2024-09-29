@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slideshow</title>
+
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/7-slider.css" />
+
+
+    <script defer src="../JS/main.js"></script>
+    <script defer src="../JS/7-slider.js"></script>
+  </head>
+
+  <body id="body">
+    <header class="sticky" id="myheader">
+      <h1 id="mainTitle" class="main-title">
+        <a style="color: white; text-decoration: none;" href="../index.html">Courses4Arab</a>
+      </h1>
+
+      <nav>
+        <ul class="parent">
+          <li>
+            <a href="https://courses4arab.com/#available-courses">
+              ALL Courses
+            </a>
+          </li>
+          <li><a href="#"> Slideshow </a></li>
+          <li id="dark" class="mode">change mode</li>
+          <li id="changecolor" style="position: relative">
+            Change Color
+
+            <ul id="hiddenul" style="display: none">
+              <li id="headerbg">Header BG</li>
+              <li id="titlebg">Title BG</li>
+              <li id="titlecolor">Title Color</li>
+              <li id="sectionbg">Section BG</li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1>Slider || Slideshow</h1>
+
+
+        <div id="sliderContainer" class="slider-container">
+         
+          
+        </div>
+
+        <div class="slide-numbers">
+
+          <button disabled  id="prev" class="active-num"> &lt; prev</button>
+
+          <div class="numbers">
+            <button  class="active-num">1</button>
+            <button >2</button>
+            <button >3</button>
+            <button >4</button>
+            <button >5</button>
+          </div>
+
+          <button id="next"  class="active-num">next &gt;</button>
+
+        </div>
+
+
+      </section>
+    </main>
+  </body>
+</html>
