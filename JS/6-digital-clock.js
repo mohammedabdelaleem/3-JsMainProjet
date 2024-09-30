@@ -25,7 +25,7 @@ const handleHour = (strHour) => {
 // get array time [hours ,minutes ,seconds ]
 const getHoursMinutesSeconds = (now) => {
   const time = [];
-  time.push(handleHour(getNumberInTwoDigits(now.getHours())));
+  time.push(getNumberInTwoDigits(handleHour(now.getHours())));
   time.push(getNumberInTwoDigits(now.getMinutes()));
   time.push(getNumberInTwoDigits(now.getSeconds()));
 
