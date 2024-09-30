@@ -8,15 +8,17 @@
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/7-slider.css" />
 
-
     <script defer src="../JS/main.js"></script>
     <script defer src="../JS/7-slider.js"></script>
+    <script defer src="../JS/8-toggle-tabs.js"></script>
   </head>
 
   <body id="body">
     <header class="sticky" id="myheader">
       <h1 id="mainTitle" class="main-title">
-        <a style="color: white; text-decoration: none;" href="../index.html">Courses4Arab</a>
+        <a style="color: white; text-decoration: none" href="../index.html"
+          >Courses4Arab</a
+        >
       </h1>
 
       <nav>
@@ -44,31 +46,67 @@
 
     <main>
       <section>
-        <h1>Slider || Slideshow</h1>
+        <h1>Toggle Tabs</h1>
 
-
-        <div id="sliderContainer" class="slider-container">
-         
-          
-        </div>
-
-        <div class="slide-numbers">
-
-          <button disabled  id="prev" class="active-num"> &lt; prev</button>
-
-          <div class="numbers">
-            <button  class="active-num">1</button>
-            <button >2</button>
-            <button >3</button>
-            <button >4</button>
-            <button >5</button>
+        <main>
+          <div class="myTabs">
+            <button class="mybtn active-btn">Finland</button>
+            <button class="mybtn">Denmark</button>
+            <button class="mybtn">Switzerland</button>
           </div>
 
-          <button id="next"  class="active-num">next &gt;</button>
 
+          <div id="parentArticles" class="fun-facts-container">
+         
+            <article class="fun-facts active-article">
+              <h2>4 Fun Facts About Finland</h2>
+              <ol>
+                <li>Over 188,000 lakes.</li>
+                <li>2 million saunas, central to Finnish life.</li>
+                <li>Midnight Sun: 24 hours of daylight in summer.</li>
+                <li>Ranked the world’s happiest country.</li>
+              </ol>
+            </article>
+
+            <article class="fun-facts">
+              <h2>4 Fun Facts About Denmark</h2>
+              <ol>
+                <li>Famous for the cozy concept of "hygge".</li>
+                <li>LEGO was invented here.</li>
+                <li>More bicycles than cars in Copenhagen</li>
+              </ol>
+            </article>
+
+            <article class="fun-facts">
+              <h2>4 Fun Facts About Switzerland</h2>
+              <ol>
+                <li>Has four official languages.</li>
+                <li>Birthplace of the Swiss Army Knife.</li>
+              </ol>
+            </article>
+
+          </div>
+        </main>
+      </section>
+
+      <section>
+        <h1>Slider || Slideshow</h1>
+
+        <div id="sliderContainer" class="slider-container"></div>
+
+        <div class="slide-numbers">
+          <button disabled id="prev" class="active-num">&lt; prev</button>
+
+          <div class="numbers">
+            <button class="active-num">1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+          </div>
+
+          <button id="next" class="active-num">next &gt;</button>
         </div>
-
-
       </section>
     </main>
   </body>

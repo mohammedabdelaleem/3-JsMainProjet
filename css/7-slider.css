@@ -1,3 +1,5 @@
+/* 7 - slideshow*/
+
 /*  top slider   */
 
 div.slider-container {
@@ -11,7 +13,7 @@ div.slider-container {
 }
 
 img.main-img {
-  width:100%;
+  width: 100%;
   height: 100%;
   border-radius: 10px;
 
@@ -102,12 +104,152 @@ button:disabled {
 }
 
 #prev:active {
- transform: translateX(-4px);
+  transform: translateX(-4px);
 }
 
 #next:active {
   transform: translateX(4px);
+}
 
+/*8- toggle tabs */
+
+.myTabs {
+  /* border: 3px solid red; */
+  text-align: center;
+  margin-block: 3rem;
+}
+
+/* button style  */
+.mybtn {
+  margin: 0.5rem;
+  color: #3d4a59;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #33557c;
+  padding: 0.375rem 0.75rem;
+  font-size: 20px;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+  opacity: 0.5;
+  transition: all 0.5s;
+}
+
+.mybtn:hover {
+  background-color: rgba(65, 105, 225, 0.91);
+  color: #fff;
+  font-size: 22px;
+  opacity: 1;
+}
+
+.dark .mybtn {
+  box-shadow: 0 0 0 #9e4673, 0 0 10px #9e4673, 0 0 0 #9e4673;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: transparent;
+}
+
+.dark .mybtn:hover {
+  background-color: #fc4364;
+}
+
+.active-btn {
+  background-color: rgba(65, 105, 225, 0.91);
+  color: #fff;
+  font-weight: 550;
+  opacity: 1;
+}
+
+.dark .active-btn {
+  background-color: #fc4364;
+}
+
+.fun-facts-container {
+
+  position: relative;
+  height: 250px;
 }
 
 
+
+
+.fun-facts {
+  opacity: 0;
+
+  position: absolute ;
+  left: 50%;
+  transform: translateX(-50%);
+
+transition: all 0.5s;
+
+}
+
+.active-article {
+  opacity: 1;
+  z-index: 10;
+
+
+}
+
+.fun-facts h2 {
+  text-align: center;
+  font-size: 31px;
+  font-weight: bold;
+  color: #3188ec;
+  margin-bottom: 30px;
+}
+
+.dark .fun-facts h2 {
+  color: antiquewhite;
+}
+
+ol {
+  /* border: 3px solid red; */
+
+  width: fit-content;
+  margin-inline: auto;
+  line-height: 40px;
+
+  /*i'll use auto increament counter*/
+  counter-reset: plus-one;
+}
+
+ol > li {
+  list-style: none;
+  font-size: 20px;
+  font-weight: 520;
+}
+
+ol li::before {
+  counter-increment: plus-one;
+  content: counter(plus-one);
+
+  color: white;
+  background-color: rgba(255, 8, 115, 0.957);
+  padding: 5px 8px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+@media (max-width : 890px) {
+
+  .fun-facts-container {
+    height: 315px;
+  }
+
+  .fun-facts h2 {
+    font-size: 25px;
+  }
+
+  ol {
+  line-height: 30px;
+
+  }
+  ol > li {
+  font-size: 15px;
+  font-weight: 400;
+
+}
+
+  
+}
