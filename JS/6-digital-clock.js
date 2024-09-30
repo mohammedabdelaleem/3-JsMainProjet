@@ -12,8 +12,8 @@ let getNumberInTwoDigits = (number) =>
 const calculateAmPm = (hours, minutes) =>
   (hours == 12 && minutes >= 0) || hours > 12 ? "PM" : "AM";
 
-const handleHour = (strHour) => {
-  let hour = Number(strHour);
+const handleHour = (hour) => {
+  // let hour = Number(strHour);
 
   if (hour == 0) hour = 12;
 
