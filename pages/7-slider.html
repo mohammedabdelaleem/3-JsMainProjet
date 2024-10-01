@@ -7,13 +7,16 @@
 
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/7-slider.css" />
+    <link rel="stylesheet" href="../icons/style.css">
 
     <script defer src="../JS/main.js"></script>
     <script defer src="../JS/7-slider.js"></script>
     <script defer src="../JS/8-toggle-tabs.js"></script>
+    <script defer src="../JS/9-input-validation.js"></script>''
   </head>
 
   <body id="body">
+
     <header class="sticky" id="myheader">
       <h1 id="mainTitle" class="main-title">
         <a style="color: white; text-decoration: none" href="../index.html"
@@ -45,6 +48,81 @@
     </header>
 
     <main>
+
+      <section>
+        <h1>validation form</h1>
+
+
+        <button id="createAccount">Create Account</button>
+
+<div class="parent-form">
+  
+  
+          <form  class="my-form" action="action_page.php">
+            <div class="form-container">
+              <h1 class="register-header">Create Account</h1>
+                <i  id="cross" class="icon-cross"></i>
+              <hr>
+
+
+          
+             <div  class="input-parent" style="position: relative;" >
+               <label for="username"><b>Username</b></label>
+                 <input type="text" placeholder="Enter Username" name="username" id="username" required>    
+              
+                 <i  class="icon-check-circle"></i>
+                 <p >at least 3 characters</p>
+             </div>
+
+
+             <div  class="input-parent" style="position: relative;">
+               <label for="email"><b>Email</b></label>
+               <input type="email" placeholder="Enter Email" name="email" id="email" required>
+              
+              <i  class="icon-check-circle"></i>
+              <p >please enter a correct email address</p>
+             </div>
+
+             <div class="input-parent" style="position: relative;">
+               <label for="psw"><b>Password</b></label>
+               <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+              
+               <i  class="icon-check-circle"></i>
+               <p >password must be at least 8 characters with 1 uppercase letter 1 special character and 1 number</p>
+             </div>
+
+            <div class="input-parent" style="position: relative;">
+                <label for="repeatPsw"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" id="repeatPsw" required>
+            
+                <i  class="icon-check-circle"></i>
+                <p >please sure your password match</p>
+              </div>
+             
+              <button type="submit" class="registerbtn" disabled id="register" >Register</button>
+            </div>
+          
+           
+          </form>
+          
+  
+  
+</div>
+
+
+
+
+
+
+      </section>
+
+
+
+
+
+
+
+
       <section>
         <h1>Toggle Tabs</h1>
 
@@ -108,6 +186,8 @@
           <button id="next" class="active-num">next &gt;</button>
         </div>
       </section>
+
+
     </main>
   </body>
 </html>

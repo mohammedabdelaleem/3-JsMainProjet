@@ -32,7 +32,7 @@ p.slide-num {
   position: absolute;
   top: 13px;
   left: 2.5%;
-  z-index: 10;
+  z-index: 5;
 }
 
 /*  buttom slider   */
@@ -41,7 +41,7 @@ div.slide-numbers {
   width: 50vw;
   margin-inline: auto;
 
-  display: flex;
+  display: flex;  
   justify-content: space-between;
   align-items: center; /* كود ابن مجرمه  */
   flex-wrap: wrap;
@@ -94,7 +94,7 @@ button:hover {
 }
 
 button:disabled {
-  opacity: 0.7;
+  opacity: 0.6;
   cursor: not-allowed;
 }
 
@@ -165,30 +165,23 @@ button:disabled {
 }
 
 .fun-facts-container {
-
   position: relative;
   height: 250px;
 }
 
-
-
-
 .fun-facts {
   opacity: 0;
 
-  position: absolute ;
+  position: absolute;
   left: 50%;
   transform: translateX(-50%);
 
-transition: all 0.5s;
-
+  transition: all 0.5s;
 }
 
 .active-article {
   opacity: 1;
-  z-index: 10;
-
-
+  z-index: 5;
 }
 
 .fun-facts h2 {
@@ -231,8 +224,7 @@ ol li::before {
   margin-right: 10px;
 }
 
-@media (max-width : 890px) {
-
+@media (max-width: 500px) {
   .fun-facts-container {
     height: 315px;
   }
@@ -242,14 +234,228 @@ ol li::before {
   }
 
   ol {
-  line-height: 30px;
-
+    line-height: 30px;
   }
   ol > li {
-  font-size: 15px;
-  font-weight: 400;
-
+    font-size: 15px;
+    font-weight: 400;
+  }
 }
 
-  
+/* ==================
+  9-validation-form
+==================  */
+
+#createAccount {
+  display: block;
+  margin: 40px auto;
+  padding: 10px 20px;
+  font-size: 21px;
+  font-weight: bold;
+  border: 2px solid rgba(0, 0, 0, 0.301);
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+
+#createAccount:hover {
+  border-color: #3d94f6;
+}
+
+.parent-form {
+  display: none;
+ /* display: flex;   ==> when click on create account */   
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.88);
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+
+ 
+}
+
+.my-form {
+  width: 35%;
+
+  background-color: white;
+  border-radius: 5px;
+
+  transform: scale(0);
+  transition: all 0.5s;
+}
+
+/* Add padding to containers */
+.form-container {
+  padding: 16px 16px 1px;
+  margin-inline: auto;
+
+  position: relative;
+}
+
+.icon-cross {
+  font-size: 17px;
+  position: absolute;
+  top: 44px;
+  right: 35px;
+  opacity: 0.75;
+  transition: all 0.2s;
+}
+
+.icon-cross:hover {
+  cursor: pointer;
+  font-size: 19px;
+  opacity: 1;
+  transform: rotate(180deg);
+}
+
+.register-header {
+  width: 100%;
+  text-align: center;
+  font-size: 37px;
+  font-weight: bolder;
+  background: linear-gradient(to right, rgba(0, 0, 255, 0.71), green);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* margin-bottom: 20px; */
+}
+
+.input-parent {
+  margin-top: 25px;
+}
+
+/* Full-width input fields */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 1px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.icon-check-circle {
+  opacity: 0;
+  color: rgb(3, 205, 3);
+  font-size: 20px;
+
+  position: absolute;
+  right: 18px;
+  top: 35px;
+
+  transition: all 0.5s;
+}
+
+.input-parent p {
+  font-size: 14px;
+  color: rgba(255, 0, 0, 0.774);
+  display: none;
+  /* position: absolute;
+  bottom: -12px;
+  left: 5px; */
+}
+
+.active {
+  display: block;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  all: unset !;
+  display: block;
+  background-color: #04aa6d;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 0.9px;
+  padding: 10px 30px;
+  margin: 20px auto;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  opacity: 0.9;
+  transition: all 0.3s;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+.error {
+  border: 2px solid red !important;
+}
+
+.success {
+  border: 2px solid #04aa6d !important;
+}
+
+@media (max-width: 1200px) {
+  .my-form {
+    width: 55%;
+  }
+
+  .register-header {
+    font-size: 35px;
+    /* text-align: left; */
+  }
+}
+
+@media (max-width: 900px) {
+  .my-form {
+    width: 75%;
+  }
+
+  .register-header {
+    font-size: 30px;
+    /* text-align: left; */
+  }
+
+  .icon-cross {
+    font-size: 15px;
+  }
+
+  .icon-cross:hover {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 470px) {
+  .my-form {
+    width: 90%;
+  }
+
+  .register-header {
+    font-size: 21px;
+    text-align: left;
+  }
+
+  .icon-cross {
+    font-size: 13px;
+    top: 37px;
+  }
+
+  .icon-cross:hover {
+    font-size: 12px;
+  }
 }

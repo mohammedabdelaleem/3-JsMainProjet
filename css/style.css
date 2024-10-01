@@ -149,8 +149,8 @@ section {
   border-radius: 13px;
 
   padding: 45px 0;
-  
-  transition : all .3s;
+
+  transition: all 0.3s;
 }
 
 .dark section {
@@ -418,56 +418,54 @@ ul#hiddenul li:hover {
 
 /* Videos  -  iframe - animation */
 #myframe {
-display: block;
-width: 500px;
-height: 450px;
-margin-block: 70px;
-margin-inline: auto;
-border-radius: .5rem;
-box-shadow: 0 5px 25px 0 rgb(0 0 0 / 60%);
-
+  display: block;
+  width: 500px;
+  height: 450px;
+  margin-block: 70px;
+  margin-inline: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 25px 0 rgb(0 0 0 / 60%);
 }
 
-#myframe, 
+#myframe,
 .sidekick {
-animation: moveXAni 0.8s 1;
+  animation: moveXAni 0.8s 1;
 }
 
 @keyframes moveXAni {
-  0%{
-  transform: translateX(100vw);
+  0% {
+    transform: translateX(100vw);
   }
 
-  100%{
+  100% {
     transform: translateX(0);
-
   }
 }
 
 .myButton {
-	box-shadow: 0px 5px 14px -7px #276873;
-	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
-	background-color:#599bb3;
-	border-radius:6px;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:20px;
-	font-weight:bold;
-	padding:15px 32px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #3d768a;
+  box-shadow: 0px 5px 14px -7px #276873;
+  background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+  background-color: #599bb3;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px 32px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #3d768a;
   display: block;
   margin-inline: auto;
 }
 
 .myButton:hover {
-	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
-	background-color:#408c99;
+  background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+  background-color: #408c99;
 }
 .myButton:active {
-	position:relative;
-	top:2px;
+  position: relative;
+  top: 2px;
 }
 
 /* Quate */
@@ -481,24 +479,32 @@ animation: moveXAni 0.8s 1;
   line-height: 1.5em;
   font-weight: 350;
 }
-.sidekick:before, .sidekick:after {
+.sidekick:before,
+.sidekick:after {
   font-family: Calibri;
-    color: #039be5;
-    font-size: 34px;
+  color: #039be5;
+  font-size: 34px;
 }
-.sidekick:before {content: '\201e'}
-.sidekick:after {content: '\201c';}
-.sidekick cite {font-size: 50%; text-align:center; top:50%}
-.sidekick cite:before {content: ' \2015 '}
-
+.sidekick:before {
+  content: "\201e";
+}
+.sidekick:after {
+  content: "\201c";
+}
+.sidekick cite {
+  font-size: 50%;
+  text-align: center;
+  top: 50%;
+}
+.sidekick cite:before {
+  content: " \2015 ";
+}
 
 #parentQuate {
-text-align: center;
-width: 80%;
-margin: 50px auto 60px;
-
+  text-align: center;
+  width: 80%;
+  margin: 50px auto 60px;
 }
-
 
 /*Random Heart / Congratuation Animation*/
 #containerHearts {
@@ -516,23 +522,22 @@ margin: 50px auto 60px;
   position: fixed;
   top: 0;
 
-animation-name:fall;
-/* animation-duration:1s; */
-animation-iteration-count:1;
-animation-timing-function:linear;
-animation-fill-mode:forwards;
+  animation-name: fall;
+  /* animation-duration:1s; */
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
 }
 
 @keyframes fall {
-  0%{
-      transform: translateY(-5vh);
+  0% {
+    transform: translateY(-5vh);
   }
 
-  100%{
-      transform: translateY(120vh);
+  100% {
+    transform: translateY(120vh);
     opacity: 0.8;
   }
 }
-
 
 

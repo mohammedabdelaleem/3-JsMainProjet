@@ -13,7 +13,6 @@ const calculateAmPm = (hours, minutes) =>
   (hours == 12 && minutes >= 0) || hours > 12 ? "PM" : "AM";
 
 const handleHour = (hour) => {
-  // let hour = Number(strHour);
 
   if (hour == 0) hour = 12;
 
@@ -47,6 +46,7 @@ const showTodayTimeProjectClock = () => {
   const now = new Date();
   const time = getHoursMinutesSeconds(now);
 
+
   let clock = `
 
     <p>${now.toDateString()}</p>
@@ -56,3 +56,5 @@ const showTodayTimeProjectClock = () => {
 };
 
 setInterval(showTodayTimeProjectClock, 1000);
+
+
