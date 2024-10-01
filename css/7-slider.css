@@ -41,7 +41,7 @@ div.slide-numbers {
   width: 50vw;
   margin-inline: auto;
 
-  display: flex;  
+  display: flex;
   justify-content: space-between;
   align-items: center; /* كود ابن مجرمه  */
   flex-wrap: wrap;
@@ -257,14 +257,13 @@ ol li::before {
   transition: all 0.3s;
 }
 
-
 #createAccount:hover {
   border-color: #3d94f6;
 }
 
 .parent-form {
   display: none;
- /* display: flex;   ==> when click on create account */   
+  /* display: flex;   ==> when click on create account */
   justify-content: center;
   align-items: center;
 
@@ -272,8 +271,6 @@ ol li::before {
   position: fixed;
   inset: 0;
   z-index: 10;
-
- 
 }
 
 .my-form {
@@ -458,4 +455,264 @@ a {
   .icon-cross:hover {
     font-size: 12px;
   }
+}
+
+/*================
+     TOOTstrap
+===================*/
+
+/*================
+     TOOTstrap 1.1 card style
+===================*/
+
+:root {
+  --yourColor: #ea336a;
+}
+
+* {
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.divcontainer {
+  margin-top: 50px;
+}
+
+.myflex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.number-box {
+  text-align: center;
+  padding: 14px 0;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  width: 20rem;
+}
+
+.number-red {
+  background-color: var(--yourColor);
+}
+
+.num {
+  color: #fff;
+  border: 3px solid #fff;
+  padding: 2px 8px;
+}
+
+.html-course {
+  color: var(--yourColor);
+}
+
+.course-title {
+  font-size: 1.7rem;
+  padding: 30px 0 15px 0;
+}
+
+p.click {
+  color: var(--yourColor);
+  font-size: 1.7rem;
+  font-weight: bold;
+  display: none;
+  color: #fff;
+  transform: translateY(-40px);
+}
+
+.course-box:hover p.click {
+  display: block;
+}
+
+.course-box:hover .mark {
+  display: none;
+}
+
+.html-logo {
+  background-color: var(--yourColor);
+}
+
+.bottom-course {
+  color: white;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 4px 0;
+  margin-top: 19px;
+  border-top: 3px solid #fff;
+}
+
+.mark {
+  font-size: 3.2rem;
+  height: 50px;
+  display: block;
+}
+
+.dark .course-box,
+.dark .course-title,
+.dark .last-two-parts {
+  background-color: aliceblue;
+}
+
+.html-container {
+  color: var(--yourColor);
+}
+
+.last-two-parts {
+  font-weight: bolder;
+  font-size: 2.5rem;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding-top: 20px;
+}
+
+.dark .course-box:hover .course-title,
+.dark .course-box:hover .last-two-parts {
+  background-color: inherit;
+}
+
+.html-box:hover {
+  background-color: var(--yourColor);
+  box-shadow: 0 7px 93px 0 rgba(255, 131, 131, 0.47);
+}
+
+.dark .html-box:hover {
+  background-color: var(--yourColor);
+}
+
+.course-box {
+  border-radius: 8px;
+  box-shadow: 0 0 4px 0 rgba(17, 22, 26, 0.16),
+    0 2px 4px 0 rgba(17, 22, 26, 0.08), 0 4px 8px 0 rgba(17, 22, 26, 0.08);
+  transition: all 0.4s;
+  text-align: center;
+}
+
+.course-box:hover {
+  animation-name: fade-down;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@media (max-width: 688px) {
+  .dark .number-box {
+    background-color: aliceblue;
+  }
+  .last-two-parts {
+    padding-top: 0;
+  }
+  .mark {
+    display: none;
+  }
+  .number-box {
+    width: 17rem;
+    background-color: #fff;
+  }
+  .number-red .num {
+    color: var(--yourColor);
+    border-color: var(--yourColor);
+  }
+  .course-box:hover .number-red {
+    background-color: var(--yourColor);
+  }
+  .course-box:hover .num {
+    color: #fff;
+    border-color: white;
+  }
+  .number-red {
+    border-top: 7px solid var(--yourColor);
+  }
+}
+
+/*================================================
+         TOOTstrap 1.2 => our code style
+===================================================*/
+
+.our-code {
+  width: 80%;
+  margin: 50px auto;
+  position: relative;
+
+  line-height: 30px;
+}
+
+
+.our-code pre {
+  padding-top: 60px ;
+  font-size: 18px;
+  letter-spacing: 1.6px;
+height: 700px;
+}
+
+
+.our-lang {
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  z-index: 11;
+
+  color: white;
+  background-color: #fc4364;
+  text-align: center;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+#copy {
+  all: unset;
+
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  z-index: 11;
+
+  color: white;
+  background-color: rgba(65, 105, 225, 0.91);
+  text-align: center;
+  cursor: pointer;
+  padding: 4px 8px;
+  font-size: 18px;
+  border-radius: 5px;
+  opacity: 0.9;
+  transition: all 0.5s;
+}
+
+#copy:hover {
+  font-size: 19.2px;
+  opacity: 1;
+}
+
+.dark #copy {
+  box-shadow: 0 0 0 #9e4673, 0 0 10px #9e4673, 0 0 0 #9e4673;
+  color: #fff;
+  background-color: #ff0936c0;
+}
+
+.dark #copy:hover {
+  background-color: #fc4364;
+  opacity: 1;
+  border: none;
+}
+
+
+summary {
+  font-size: 28px;
+  font-weight: 550;
+  margin-right: 50px;
+}
+
+summary.html {
+  margin-top: 70px ;
+  margin-bottom: 30px ;
+
 }

@@ -5,18 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Slideshow</title>
 
+    <link rel="stylesheet" href="../prism/prism.css" />
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/7-slider.css" />
-    <link rel="stylesheet" href="../icons/style.css">
+    <link rel="stylesheet" href="../icons/style.css" />
+
+
+
+  <script defer src="../prism/prism.js"></script>
 
     <script defer src="../JS/main.js"></script>
     <script defer src="../JS/7-slider.js"></script>
     <script defer src="../JS/8-toggle-tabs.js"></script>
-    <script defer src="../JS/9-input-validation.js"></script>''
+    <script defer src="../JS/9-input-validation.js"></script>
+    <script defer src="../JS/10-tootstrap.js"></script>
+
+  
   </head>
 
   <body id="body">
-
     <header class="sticky" id="myheader">
       <h1 id="mainTitle" class="main-title">
         <a style="color: white; text-decoration: none" href="../index.html"
@@ -48,10 +55,263 @@
     </header>
 
     <main>
-
       <section>
-        <h1>validation form</h1>
+        <h1>11- TOOTstap</h1>
 
+        <div class="myflex">
+          <article class="divcontainer">
+            <a class="focus-a" href="#">
+              <div class="course-box html-box">
+                <div class="number-box number-red">
+                  <span class="num"> 1 </span>
+                </div>
+
+                <h2 lang="ar" dir="rtl" class="html-course course-title">
+                  كورس HTML كامل
+                </h2>
+
+                <p lang="ar" dir="rtl" class="click">
+                  كورس HTML رايق
+                  <span role="img"> &#128525; </span>
+                </p>
+
+                <div class="html-container last-two-parts">
+                  <span dir="ltr" class="mark"> &lt; &nbsp; /&gt; </span>
+                  <h4 class="html-logo bottom-course">HTML</h4>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+
+
+<details>
+  <summary class="html" lang="ar" dir="rtl">كود ال HTML</summary>
+
+  <article class="our-code line-numbers" >
+    <b class="our-lang">HTML</b>
+    <button id="copy">copy</button>
+
+    <pre><code class="language-html">&lt;div class=&quot;myflex&quot;&gt;
+&lt;article class=&quot;divcontainer&quot;&gt;
+&lt;a class=&quot;focus-a&quot; href=&quot;#&quot;&gt;
+  &lt;div class=&quot;course-box html-box&quot;&gt;
+      &lt;div class=&quot;number-box number-red&quot;&gt;
+        &lt;span class=&quot;num&quot;&gt; 1 &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;h2 lang=&quot;ar&quot; dir=&quot;rtl&quot; class=&quot;html-course course-title&quot;&gt;
+        كورس HTML كامل
+      &lt;/h2&gt;
+      &lt;p lang=&quot;ar&quot; dir=&quot;rtl&quot; class=&quot;click&quot;&gt;
+        كورس HTML رايق
+        &lt;span role=&quot;img&quot;&gt; &amp;#128525; &lt;/span&gt;
+      &lt;/p&gt;
+      &lt;div class=&quot;html-container last-two-parts&quot;&gt;
+        &lt;span dir=&quot;ltr&quot; class=&quot;mark&quot;&gt; &amp;lt; &amp;nbsp; /&amp;gt; &lt;/span&gt;
+        &lt;h4 class=&quot;html-logo bottom-course&quot;&gt;HTML&lt;/h4&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/a&gt;
+&lt;/article&gt;
+&lt;/div&gt;</code></pre>
+  </article> <article class="our-code line-numbers" >
+    
+</details>
+
+       
+
+<details>
+  <summary lang="ar" dir="rtl" >كود ال CSS</summary>
+
+        <article class="our-code line-numbers" >
+          <b class="our-lang">Css</b>
+          <button id="copy">copy</button>
+
+          <pre><code class="language-css">:root {
+  --yourColor: #ea336a;
+}
+
+* {
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.divcontainer {
+  margin-top: 50px;
+}
+
+.myflex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.number-box {
+  text-align: center;
+  padding: 14px 0;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  width: 20rem;
+}
+
+.number-red {
+  background-color: var(--yourColor);
+}
+
+.num {
+  color: #fff;
+  border: 3px solid #fff;
+  padding: 2px 8px;
+}
+
+.html-course {
+  color: var(--yourColor);
+}
+
+.course-title {
+  font-size: 1.7rem;
+  padding: 30px 0 15px 0;
+}
+
+p.click {
+  color: var(--yourColor);
+  font-size: 1.7rem;
+  font-weight: bold;
+  display: none;
+  color: #fff;
+  transform: translateY(-40px);
+}
+
+.course-box:hover p.click {
+  display: block;
+}
+
+.course-box:hover .mark {
+  display: none;
+}
+
+.html-logo {
+  background-color: var(--yourColor);
+}
+
+.bottom-course {
+  color: white;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 4px 0;
+  margin-top: 19px;
+  border-top: 3px solid #fff;
+}
+
+.mark {
+  font-size: 3.2rem;
+  height: 50px;
+  display: block;
+}
+
+.dark .course-box,
+.dark .course-title,
+.dark .last-two-parts {
+  background-color: aliceblue;
+}
+
+.html-container {
+  color: var(--yourColor);
+}
+
+.last-two-parts {
+  font-weight: bolder;
+  font-size: 2.5rem;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding-top: 20px;
+}
+
+.dark .course-box:hover .course-title,
+.dark .course-box:hover .last-two-parts {
+  background-color: inherit;
+}
+
+.html-box:hover {
+  background-color: var(--yourColor);
+  box-shadow: 0 7px 93px 0 rgba(255, 131, 131, 0.47);
+}
+
+.dark .html-box:hover {
+  background-color: var(--yourColor);
+}
+
+.course-box {
+  border-radius: 8px;
+  box-shadow: 0 0 4px 0 rgba(17, 22, 26, 0.16),
+    0 2px 4px 0 rgba(17, 22, 26, 0.08), 0 4px 8px 0 rgba(17, 22, 26, 0.08);
+  transition: all 0.4s;
+  text-align: center;
+}
+
+.course-box:hover {
+  animation-name: fade-down;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@media (max-width: 688px) {
+  .dark .number-box {
+    background-color: aliceblue;
+  }
+
+  .last-two-parts {
+    padding-top: 0;
+  }
+
+  .mark {
+    display: none;
+  }
+
+  .number-box {
+    width: 17rem;
+    background-color: #fff;
+  }
+
+  .number-red .num {
+    color: var(--yourColor);
+    border-color: var(--yourColor);
+  }
+
+  .course-box:hover .number-red {
+    background-color: var(--yourColor);
+  }
+
+  .course-box:hover .num {
+    color: #fff;
+    border-color: white;
+  }
+
+  .number-red {
+    border-top: 7px solid var(--yourColor);
+  }
+}</code></pre>
+        </article>
+
+      </details>
+
+
+      </section>
+
+      <section> 
+        <h1>validation form</h1>
 
         <button id="createAccount">Create Account</button>
 
@@ -116,13 +376,6 @@
 
       </section>
 
-
-
-
-
-
-
-
       <section>
         <h1>Toggle Tabs</h1>
 
@@ -186,8 +439,7 @@
           <button id="next" class="active-num">next &gt;</button>
         </div>
       </section>
-
-
+ 
     </main>
   </body>
 </html>
