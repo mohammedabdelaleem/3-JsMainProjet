@@ -1,0 +1,202 @@
+/* =================
+      online store
+=================*/
+
+p {
+    margin-bottom: 0;
+}
+
+.store-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* =================
+       my card
+=================*/
+.mycard {
+  border-radius: 10px;
+  padding-bottom: 0;
+}
+
+.card-body {
+  padding-bottom: 0;
+}
+
+.card-img-top {
+  width: 70%;
+  margin: 10px auto 1px;
+}
+
+.card-title {
+  font-size: 25px;
+  font-weight: 548;
+}
+
+.card-text {
+  text-transform: capitalize;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.6px;
+  margin-bottom: 7px;
+}
+
+.buy-price {
+  padding-inline: 10px;
+  height: 39px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button.btn {
+  border: none;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 5px 15px 2px 15px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(255, 0, 0, 0.781);
+}
+
+/* =================
+    congratulation
+====================*/
+
+.congratulation {
+  color: rgba(255, 255, 255, 0.927);
+  border: 2px solid #007bbe;
+  background-color: #096a9e;
+  border-radius: 15px;
+  width: 25%;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px 0;
+  position: fixed;
+  z-index: 15;
+  top: 10px;
+  right: 50%;
+  transform: translateX(50%);
+
+  transition: all 0.9s;
+}
+
+.products {
+  color: rgba(255, 255, 255, 0.861);
+  /* border: 2px solid #007bbe; */
+  /* background-color: #096a9e; */
+  border-radius: 5px;
+  font-size: 19px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px 20px !important;
+  position: fixed;
+  z-index: 13;
+  top: 0px;
+  right: 10px;
+
+  transform: scale(0);
+  transition: all 1s;
+}
+
+.dn {
+  display: none;
+}
+
+.dark .congratulation {
+  background-color: rgba(255, 127, 80, 0.874);
+  border: none;
+}
+
+/* ==================================
+    black-container : my products
+=====================================*/
+
+.black-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 15;
+  background: #1e3250;
+  color: #fff;
+overflow-y: scroll;
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  transform: translateX(110vw);
+
+  transition: all 0.7s;
+}
+
+#cross {
+  position: absolute;
+  top: 2.5%;
+  right: 20px;
+
+  font-size: 23px;
+  padding: 10px;
+  opacity: 0.8;
+  transition: all 0.2s;
+}
+
+#cross:hover {
+    color: gold;
+  cursor: pointer;
+  opacity: 1;
+  transform: rotate(180deg);
+}
+
+/* ==================================
+    black-container : my products  [ product]
+=====================================*/
+
+.item-container {
+  color: black;
+  background-color: #fff;
+  border-bottom: #007bbedd;
+  border-radius: 5px;
+  width: 80vw;
+  margin-inline: auto;
+  margin-bottom: 40px;
+  padding: 5px 50px 5px 60px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input#quantity {
+  width: 45px;
+  border: 2px solid #57c4ffe7;
+  border-radius: 3px;
+}
+
+/* ==================================
+    black-container : my products  [ product]
+=====================================*/
+
+.total-price-parent {
+  /* border: 3px solid red; */
+  width: 300px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p#sum {
+    font-size: 17px;
+     font-weight: 660;
+      margin-bottom: 0.3rem ;
+}

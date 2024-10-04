@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Store</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="shortcut icon"
+      href="./imgs/javascript.svg"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../icons/style.css" />
+
+    <link rel="stylesheet" href="../css/11-store.css" />
+
+
+    <script defer src="../JS/main.js"></script>
+    <script defer src="../JS/11-store.js"></script>
+
+
+
+  </head>
+
+  <body id="body">
+    <header class="sticky" id="myheader">
+      <h1 id="mainTitle" class="main-title">Courses4Arab</h1>
+
+      <nav>
+        <ul class="parent">
+          <li>
+            <a href="https://courses4arab.com/#available-courses">
+              Online Store
+            </a>
+          </li>
+          <li><a href="./pages/7-slider.html"> 8 , 9 , 10 & 11 </a></li>
+          <li id="dark" class="mode">change mode</li>
+          <li id="changecolor" style="position: relative">
+            Change Color
+
+            <ul id="hiddenul" style="display: none">
+              <li id="headerbg">Header BG</li>
+              <li id="titlebg">Title BG</li>
+              <li id="titlecolor">Title Color</li>
+              <li id="sectionbg">Section BG</li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="mymain">
+      <!-- <section id="sec">
+        <h1 id="me">أنا مين ؟</h1>
+
+        <div class="flex">
+          <article class="left-section m-inline">
+            <h5 class="my-goal">هدفى</h5>
+
+            <p>
+              ان اكون مهندس برمجيات قوي
+              <br />
+              واقدر افيد واساعد غيري
+            </p>
+
+            <a
+              class="youtube"
+              href=""
+            >
+              youtube
+            </a>
+
+            <a class="facebook" href=""> facebook </a>
+          </article>
+
+          <article class="right-section m-inline">
+            <img class="my-img" src="../imgs/myPhoto1.png" alt="" />
+
+            <h5>Mohammed Abd El-Aleem</h5>
+
+            <p class="para">
+              طالب في كليه الحاسبات جامعة الزقازيق
+              <br />
+              عندي شغف بمجموعة مجالات لكن حاليا بذاكر مجال الويب + الذكاء
+              الاصطناعي
+            </p>
+          </article>
+        </div>
+      </section> -->
+
+
+
+<section lang="en">
+<h1>&#128085 Online Store</h1>
+
+
+<h2 class="congratulation dn" dir="rtl" lang="ar">مبروك <span dir="rtl" lang="ar" style="color: rgba(223, 15, 15, 0.911);">&#10084;</span></h2>
+
+<button id="showProducts" class="products btn btn-success" dir="rtl" lang="ar">عرض المشتريات</button>
+
+
+<div class="store-container">
+
+
+    <div class="card mycard" style="width: 18rem;">
+        <img src="../imgs/T-shirts/1.jfif" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Black T-shirt</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="buy-price">
+            <button href="#" class="buy btn btn-primary">buy</button>
+            <p class="price">$10</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card mycard" style="width: 18rem;">
+        <img src="../imgs/T-shirts/2.jpeg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Gray T-shirt</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="buy-price">
+            <button href="#" class="buy btn btn-primary">buy</button>
+            <p class="price">$30</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mycard" style="width: 18rem;">
+        <img src="../imgs/T-shirts/3.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Blue T-shirt</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="buy-price">
+            <button href="#" class="buy btn btn-primary">buy</button>
+            <p class="price">$35</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mycard" style="width: 18rem;">
+        <img height="200" src="../imgs/T-shirts/4.jfif" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Sleeve T-shirt</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="buy-price">
+
+            <button  href="#" class="buy btn btn-primary">buy    </button>
+
+            <p  class="price">$50</p>
+          </div>
+        </div>
+      </div>
+
+
+
+</div>
+
+</section>
+
+
+
+<section id="blackScreen" class="black-container" >
+<i id="cross" class="icon-cross" ></i>
+
+<div class="cart-products" style="margin-top: 50px;"></div>
+
+
+<div class="total-price-parent">
+    <button id="ok" class="btn btn-success" dir="rtl" lang="ar" style=" padding: 10px 20px ;"> تنفيذ عملية الشراء</button>
+   
+    <div  class="total-price-container" style="display: flex;flex-direction: column;text-align: center;">
+        <p dir="rtl" lang="ar" >المجموع</p>
+        <h2 id="totalPrice">$0</h2>
+    </div>
+</div>
+
+</section>
+
+
+    </main>
+
+  </body>
+</html>
