@@ -87,6 +87,11 @@
           sections[i].style.backgroundColor = randomColor;
   
         }
+        // i = i+1 % (length) => 
+          // length = 5 , i=4 
+        // result for next step => 5%5 = 0 yebbbbbbbbbb
+        
+
       }
     );
   }
